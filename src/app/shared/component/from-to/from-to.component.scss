@@ -1,0 +1,26 @@
+@import "~src/scss/variables";
+
+.time-container {
+  display: flex;
+  align-items: center;
+
+  .item {
+    padding: 5px;
+    text-align: center;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      margin-left: auto;
+    }
+
+    .f-type {
+      color: $primary-color;
+    }
+    label {
+      color: $secondary-color;
+    }
+  }
+}

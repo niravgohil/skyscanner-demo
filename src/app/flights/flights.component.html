@@ -1,0 +1,19 @@
+<div class="flights-container">
+  <div class="card-deck">
+    <div class="card p-2" *ngFor="let itinery of itineraries">
+      <app-from-to [leg]="itinery.legs[0]"></app-from-to>
+      <app-from-to [leg]="itinery.legs[1]"></app-from-to>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column">
+          <label for="" class="mb-0 h4 font-weight-normal">{{
+            itinery.price
+          }}</label>
+          <a class="site-name" href="{{ itinery.agent }}" target="_blank">{{
+            itinery.agent
+          }}</a>
+        </div>
+        <button class="btn btn-primary">Select</button>
+      </div>
+    </div>
+  </div>
+</div>

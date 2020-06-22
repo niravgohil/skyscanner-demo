@@ -1,0 +1,33 @@
+@import "~src/scss/variables";
+
+.flights-container {
+  background-color: $bg-color;
+  display: flex;
+}
+
+.card {
+  padding: 5px;
+  margin: 10px;
+}
+
+.site-name {
+  color: $secondary-color;
+}
+
+.card-deck {
+  margin: 0;
+}
+
+.card-deck .card {
+  margin: 5px;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  min-width: 300px;
+}
+
+@media (max-width :767px){
+  .card-deck {
+    width:calc(100% - 5px)
+  }
+  .card-deck .card{margin: 5px;}
+}
